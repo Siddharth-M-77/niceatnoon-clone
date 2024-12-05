@@ -1,0 +1,137 @@
+@font-face {
+    font-family: noon;
+    src: url(./64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.n {
+    width: 4%;
+    animation: rotate 6s linear infinite;
+    ;
+}
+
+.btn {
+    padding: .8rem 3rem;
+    border: none;
+    border-radius: .7rem;
+    font-weight: 500;
+    font-family: noon;
+    background-color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+body {
+    background-color: #E4E4E4;
+    padding: 1rem 2rem;
+
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+
+    & .hero {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        & h1 {
+            font-size: 5rem;
+            margin-top: 3rem;
+            line-height: 1;
+
+            & .n {
+                width: 15%;
+
+            }
+        }
+
+        & .right-text {
+            display: flex;
+            padding: 1rem;
+            align-items: start;
+            justify-content: center;
+            gap: 2rem;
+            flex-direction: column;
+
+            width: 22%;
+        }
+    }
+}
+
+#page1 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        & a {
+            text-decoration: none;
+            font-family: noon;
+            font-weight: 900;
+            border: 1px solid black;
+            padding: .6rem 1rem;
+            border-radius: 10px;
+            color: black;
+            opacity: 0.8;
+            font-weight: 300;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+
+        }
+
+
+        & .contact {
+            opacity: 1;
+            text-decoration: underline;
+
+        }
+    }
+
+
+}
+
+#page2 {
+    width: 100%;
+    height: 100vh;
+}
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
