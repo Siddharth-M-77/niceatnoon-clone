@@ -3,6 +3,16 @@
     src: url(./64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2);
 }
 
+@font-face {
+    font-family: noonmid;
+    src: url(./64eda5e581cb8e58ed55dea5_apercu-medium.woff2);
+}
+
+@font-face {
+    font-family: noonBold;
+    src: url(./6479b994523a6279a03d4da7_Siaga-Bold.woff2);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -40,6 +50,7 @@ body {
 
 }
 
+
 #page1 {
     width: 100%;
     height: 100vh;
@@ -48,11 +59,14 @@ body {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        margin-top: 2rem;
 
         & h1 {
-            font-size: 5rem;
+            font-size: 6rem;
             margin-top: 3rem;
             line-height: 1;
+            font-family: "Larken-bold";
+            font-weight: 500;
 
             & .n {
                 width: 15%;
@@ -67,8 +81,12 @@ body {
             justify-content: center;
             gap: 2rem;
             flex-direction: column;
-
             width: 22%;
+
+            & p {
+                font-size: 1rem;
+                font-family: 'larken-regular';
+            }
         }
     }
 }
@@ -115,8 +133,21 @@ body {
 }
 
 #page2 {
-    width: 100%;
     height: 100vh;
+    display: flex;
+    gap: 1rem;
+    & .card {
+        height: 80vh;
+        width: 35%;
+        border-radius: 1rem;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    }
 }
 
 #page3 {
