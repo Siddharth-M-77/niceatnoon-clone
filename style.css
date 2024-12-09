@@ -231,7 +231,7 @@ body {
     background-size: 100%;
     background-position: center;
     border-radius: 2rem;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,9 +272,37 @@ body {
 #page6 {
     height: 100vh;
     width: 100%;
-    background-color: red;
     margin-top: 4rem;
 }
+
+#page7 {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page7 .s-card {
+    transition: all .25s linear;
+}
+
+#page7 .s-card:hover {
+    border-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+#page7 .s-card:hover .btm-c {
+    border-radius: 3rem;
+}
+
+#page7 .s-card .btm-c {
+    transition: all .25s linear;
+
+}
+
+
 
 
 @keyframes rotate {
