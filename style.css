@@ -280,17 +280,18 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 }
 
+
 #page7 .s-card {
-    transition: all .25s linear;
+
+    transition: all .35s linear;
 }
 
 #page7 .s-card:hover {
     border-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-    border-bottom-left-radius: 3rem;
+
 }
 
 #page7 .s-card:hover .btm-c {
@@ -298,19 +299,22 @@ body {
 }
 
 #page7 .s-card .btm-c {
-    transition: all .25s linear;
+
+    transition: all .35s linear;
 
 }
 
-
-
-
-@keyframes rotate {
-    0% {
-        rotate: 0;
-    }
-
-    100% {
-        rotate: 360deg;
-    }
+.smile {
+    animation: rotate 7s infinite linear;
 }
+
+
+    @keyframes rotate {
+        0% {
+            rotate: 0;
+        }
+
+        100% {
+            rotate: 360deg;
+        }
+    }
